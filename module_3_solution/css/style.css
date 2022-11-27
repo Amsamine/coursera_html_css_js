@@ -1,0 +1,39 @@
+body {
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+.navbar-brand {
+	float: left;
+	color : black;
+	font-weight: bolder;
+	font-size:30px;
+	margin-left : 10px;
+}
+
+.navbar {
+	border : solid black 1px;
+}
+
+.menu-section {
+	background-color: grey;
+	height: 1000px;
+}
+
+#text-menu {
+	font-weight: bold;
+}
+
+#text-content {
+	font-family: "Times New Roman", Times, serif;
+}
+
+.nav-item {
+	width:100%;
+	background-color: #ADD8E6;
+}
+
+.text-container .brand {
+	margin-left :0;
+}
