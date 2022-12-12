@@ -116,7 +116,7 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       //
 
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName","'"+ chosenCategoryShortName+ ".json'")
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName","'"+ chosenCategoryShortName+ "'")
 
 
       // TODO: STEP 4: Insert the produced HTML in STEP 3 into the main page
@@ -153,7 +153,7 @@ dc.loadMenuCategories = function () {
 dc.loadMenuItems = function (categoryShort) {
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
-    menuItemsUrl + categoryShort,
+    menuItemsUrl + categoryShort + ".json",
     buildAndShowMenuItemsHTML);
 };
 
